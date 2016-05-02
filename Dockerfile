@@ -55,4 +55,4 @@ RUN chown -R beaker:beaker /home/beaker/.beaker
 
 EXPOSE 8800
 WORKDIR /home/beaker/src
-CMD su -m beaker -c "export PATH=$PATH:/usr/sbin && /home/beaker/src/core/beaker.command --public-server"
+CMD su -m beaker -c "export PATH=$PATH:/usr/sbin && /home/beaker/src/core/beaker.command --public-server --no-password"
